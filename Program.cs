@@ -10,6 +10,13 @@ namespace Lesson_4
     {
         static void Main(string[] args)
         {
+            GetFullName("Петров", "Валерий", "Валерьевич");
+            GetFullName("Сидоров", "Владимир", "Иванович");
+            GetFullName("Саврасов", "Петр", "Евгеньевич");// Вызов метода в методе Main
+        }
+        static void GetFullName(string lastName, string firstName, string patronymic)// Метод GetFullName с аргументами и выводящая в консоль значения аргументов
+        {
+            Console.WriteLine($"{lastName} {firstName} {patronymic}");
         }
     }
 }
